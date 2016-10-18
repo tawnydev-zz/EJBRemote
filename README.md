@@ -1,5 +1,5 @@
 # EJBRemote
-Projet d'apprentissage de l'EJB accessible en remote
+Projet d'apprentissage des EJB
 
 Installation:
 <ul>
