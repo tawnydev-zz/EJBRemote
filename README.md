@@ -3,7 +3,7 @@ Projet d'apprentissage des EJB
 <h2>Pré-requis:</h2>
 <ul>
 <li>JBOSS AS 7.1</li>
-<li>JDK 1.5.0_22</li>
+<li>JDK 1.7.0_79</li>
 </ul>
 <h2>Installation:</h2>
 <ul>
