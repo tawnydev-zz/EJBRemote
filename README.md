@@ -1,10 +1,10 @@
 # EJBRemote
 Projet d'apprentissage des EJB
-<h1>Pré-requis:</h1>
+<h2>Pré-requis:</h2>
 <ul>
 <li>JBOSS AS 7.1</li>
 </ul>
-<h1>Installation:</h1>
+<h2>Installation:</h2>
 <ul>
 <li>Utiliser la commande "add-user" de JBOSS dans /bin</li>
 <li>Appuyer sur entrer pour le management Realm</li>
