@@ -1,4 +1,4 @@
-package org.jboss.as.quickstarts.ejb.remote.stateless;
+package ejb.remote.stateless;
 
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 public class CalculatorBean implements RemoteCalculator {
 	static Logger logger = Logger.getLogger(CalculatorBean.class);
 	
-	public void Calculator(){
+	public CalculatorBean(){
     	logger.setLevel(Level.DEBUG);
     	BasicConfigurator.configure();
     	logger.info("Appel du Construteur de CalculatorBean");

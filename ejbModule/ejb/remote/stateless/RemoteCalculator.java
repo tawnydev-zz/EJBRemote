@@ -1,4 +1,4 @@
-package org.jboss.as.quickstarts.ejb.remote.stateless;
+package ejb.remote.stateless;
 
 public interface RemoteCalculator {
  
