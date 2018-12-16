@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'JenkinsFile'
-    }
-
-  }
+  agent none
   stages {
     stage('Checkout') {
       steps {
