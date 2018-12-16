@@ -3,9 +3,7 @@ node {
    def javaHome
        
     stage('Checkout') {
-      steps {
-        git(url: 'https://github.com/tawnydev/EJBRemote', branch: 'master', changelog: true)
-      }
+		git(url: 'https://github.com/tawnydev/EJBRemote', branch: 'master', changelog: true)
     }
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
@@ -15,15 +13,13 @@ node {
         // **       in the global configuration.           
         mvnHome = tool 'Maven 3.6.0'
         javaHome = tool 'Java 8'
-   }
+   	}
     stage('Build') {
-      steps {
         // Run the maven build
-	      if (isUnix()) {
-	         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
-	      } else {
-	         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-	      }
-      }
-   }
+		if (isUnix()) {
+			sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+		} else {
+			bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+		}
+	}
 }
