@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+<!-- 	<local-tx-datasource> -->
+<!-- 	  <jndi-name>MysqlDS</jndi-name> -->
+<!-- 	  <connection-url>jdbc:mysql://localhost:3306/db_ejb</connection-url> -->
+<!-- 	  <driver-class>com.mysql.jdbc.Driver</driver-class> -->
+<!-- 	  <user-name>admin</user-name> -->
+<!-- 	  <password>K00kies</password> -->
+<!-- 	  <valid-connection-checker-class-name>org.jboss.resource.adapter.jdbc.vendor.MySQLValidConnectionChecker</valid-connection-checker-class-name> -->
+<!-- 	  <metadata> -->
+<!-- 	<type-mapping>mySQL</type-mapping> -->
+<!-- 	</metadata> -->
+<!-- 	</local-tx-datasource> -->
+	<datasource jndi-name="java:jboss/datasources/MySQLDS" pool-name="MySQLDS" enabled="true" use-java-context="true">
+		<connection-url>jdbc:mysql://localhost:3306/db_ejb</connection-url>
+		<driver>MySQL</driver>
+		<security>
+     		<user-name>admin</user-name>
+			<password>K00kies</password>
+		</security>
+	</datasource>
+	<drivers>
+    	<!--  MYSQL DRIVER  -->
+		<driver name="mysql" module="MySQL.jdbc">
+       		<xa-datasource-class>com.mysql.jdbc.Driver</xa-datasource-class>
+   		</driver>
+	</drivers>
+</datasources>

@@ -1,6 +1,5 @@
 package ejb.remote.stateless;
 
-import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 import org.apache.log4j.BasicConfigurator;
@@ -8,7 +7,6 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 @Stateless
-@Remote(RemoteCalculator.class)
 public class CalculatorBean implements RemoteCalculator {
 	static Logger logger = Logger.getLogger(CalculatorBean.class);
 	

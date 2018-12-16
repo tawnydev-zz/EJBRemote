@@ -1,15 +1,12 @@
 package ejb.remote.stateful;
 
-import javax.ejb.Remote;
 import javax.ejb.Stateful;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
-import ejb.remote.stateless.CalculatorBean;
 @Stateful
-@Remote(RemoteCounter.class)
 public class CounterBean implements RemoteCounter {
 	static Logger logger = Logger.getLogger(CounterBean.class);
 	private static int nbInstance=0;
